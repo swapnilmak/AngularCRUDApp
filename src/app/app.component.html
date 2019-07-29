@@ -1,0 +1,34 @@
+<header>
+  <div class='headerDiv'>
+    <div id='logoDiv' >
+      <img width="100" height="100" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+    </div> 
+    <div id='searchDiv'>
+      <input type="text" name="search">
+      <button type="button" (click)="onSearchClick()">Search</button>
+    </div> 
+    <div id="loginDiv">
+      <ul>
+        <li><a routerLink="/login" routerLinkActive = "active">Login</a></li>
+        <li><a routerLink="/register">register</a></li>
+      </ul>
+    </div>
+  </div>
+ 
+</header>
+
+<nav class="nav-anchor">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/admin">Admin</a>
+    <a routerLink="/hr">HR</a>
+    <a routerLink="/crud">CRUD Opeartion</a>
+</nav>
+
+<section  class="routerSection">
+    <router-outlet></router-outlet>
+</section>
+
+<footer class="footer">
+    <b>Swapnil Makne</b>
+</footer>
+

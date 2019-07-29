@@ -1,0 +1,35 @@
+.nav-anchor{
+    background-color: rgb(0, 140, 255) ;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    margin: 20px 0px 0px 0px;
+}
+.nav-anchor a{
+    margin: 0px 0px 0px 10px;
+    color: white;
+}
+.routerSection{
+    float: left;
+    margin: 5px 0px 0px 10px;
+}
+#logoDiv { float: left; }
+#searchDiv { float: left; margin: 40px 0px 0px 10px}
+#loginDiv { float: right; margin: -40px 0px 0px 10px} 
+
+.headerDiv #logoDiv { width: 20%; }
+.headerDiv #searchDiv { width: 40%; }
+.headerDiv #loginDiv { width: 40%; }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(129, 228, 231);
+    padding: 10px;
+    text-align: center;
+   
+}
+

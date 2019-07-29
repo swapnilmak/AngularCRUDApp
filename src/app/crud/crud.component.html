@@ -1,0 +1,24 @@
+<h3>CRUD API</h3>
+<a (click)="getEmployees()">get Employees</a>
+
+<a routerLink="/addEmployee">Add Employee</a>
+
+
+
+<table border="1">
+  <th>ID</th>
+  <th>Name</th>
+  <th>Age</th>
+  <th>Address</th>
+  <th>Edit</th>
+  <th>Delete</th>
+  <tr *ngFor="let employee of employees; ">
+    <td> {{employee.id}} </td>
+    <td> {{employee.name}}  </td>
+    <td>  {{employee.age}}  </td>
+    <td> {{employee.address.flatno}} ,  {{employee.address.streetName}},  {{employee.address.city}} </td>
+    <!-- <td> <a [routerLink]="['/editEmployee']" [queryParams]="{record:employee.id | json}">edit Employee</a>  </td> -->
+    <td> <button (click)="editEmployeeClick(employee)" >Edit Employee</button></td>
+    <td> <button (click)="deleteEmployeeClick(employee)" >Delete</button><a></a></td>
+  </tr>
+</table>

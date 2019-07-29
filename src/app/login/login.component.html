@@ -1,0 +1,12 @@
+<h3>Login Form</h3>
+<form #loginForm = "ngForm">
+  <div class="name">
+    <label>Name: </label>
+    <input id="name" #userName="ngModel" type="text" name="userName" [(ngModel)] = 'userLogin.userName'>
+  </div>
+  <div class="password">
+      <label>Password: </label>
+      <input type="text" #password="ngModel" name="password" [(ngModel)]= 'userLogin.password'>
+  </div>
+  <button class="loginButton" (click)='onLoginClick()'>Login</button>
+</form>

@@ -1,0 +1,29 @@
+<h3>Edit Form</h3>
+<form #userForm = "ngForm" (ngSubmit)="editEmployee(userForm)">
+  <div>
+    <label style="margin: 10px;">ID</label>
+    <input type="text" #id="ngModel" name="id" [(ngModel)]="employee.id" style="margin: 10px;">
+  </div>
+  <div>
+    <label style="margin: 10px;">Name</label>
+    <input type="text" #name="ngModel" name="name" [(ngModel)]="employee.name" style="margin: 10px;">
+  </div>
+  <div>
+    <label style="margin: 10px;">Age</label>
+    <input type="text" #age="ngModel" name="age" [(ngModel)]="employee.age" style="margin: 10px;">
+  </div>
+  <div>
+    <label style="margin: 10px;">Address : </label><br>
+    <label style="margin: 10px;">flatno</label>
+    <input type="text" #flatno="ngModel" name="flatno" [(ngModel)]="employee.address.flatno" style="margin: 10px;"><br>
+    <label>streetName</label>
+    <input type="text" #streetName="ngModel" name="streetName" [(ngModel)]="employee.address.streetName" style="margin: 10px;"><br>
+    <label>city</label>
+    <input type="text" #city="ngModel" name="city" [(ngModel)]="employee.address.city" style="margin: 10px;">
+  </div>
+  <div>
+    <input type="submit" style="margin: 10px;">
+   
+  </div>
+ 
+</form>
